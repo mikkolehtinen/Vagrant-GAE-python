@@ -1,5 +1,5 @@
 File { owner => 0, group => 0, mode => 0644 }
-Exec { path => ["/bin", "/usr/bin", "/sbin", "/usr/sbin"] }
+Exec { path => ["/bin", "/usr/bin", "/sbin", "/usr/sbin", "/opt/ruby/bin"] }
 group { "puppet": ensure => "present" }
 
 import 'deadsnakes_python2.5.pp'
@@ -19,3 +19,9 @@ $GAE_DIR = "$GAE_BASE/$GAE"
 
 import 'opt_google_appengine_python2.5.pp'
 include google_app_engine_python_sdk
+
+import 'nc_deps.pp'
+include ncdeps
+
+import 'shell.pp'
+include base
