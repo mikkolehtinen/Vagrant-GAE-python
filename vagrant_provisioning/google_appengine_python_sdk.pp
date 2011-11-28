@@ -1,5 +1,5 @@
 File { owner => 0, group => 0, mode => 0644 }
-Exec { path => ["/bin", "/usr/bin", "/sbin", "/usr/sbin", "/opt/ruby/bin"] }
+Exec { path => ["/bin", "/usr/bin", "/sbin", "/usr/sbin", "/opt/ruby/bin", "/var/lib/gems/1.8/bin/"] }
 group { "puppet": ensure => "present" }
 
 import 'deadsnakes_python2.5.pp'

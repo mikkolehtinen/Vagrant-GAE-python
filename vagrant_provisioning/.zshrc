@@ -18,3 +18,5 @@ export DISABLE_AUTO_UPDATE="true"
 plugins=(git gae vim)
 
 source $ZSH/oh-my-zsh.sh
+
+GEM_PATH='/var/lib/gems/1.8/'

@@ -6,5 +6,8 @@ class ncdeps {
       package { "sass":
       	provider => gem,
       }
+      package { "compass":
+      	provider => gem,
+      }      
 }
 
