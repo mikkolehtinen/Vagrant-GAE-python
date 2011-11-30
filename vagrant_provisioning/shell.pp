@@ -3,7 +3,7 @@ class base {
 	package {$packages:
 		ensure => "present" 
 	} 
-	$repo = "git://github.com/robbyrussell/oh-my-zsh.git" 
+	$repo = "git://github.com/mikkolehtinen/oh-my-zsh.git" 
 
 	exec { "ohmyzsh": command => "git clone ${repo} .oh-my-zsh", 
 			cwd => "/home/vagrant", 

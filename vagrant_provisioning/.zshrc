@@ -19,6 +19,10 @@ plugins=(git gae vim)
 
 source $ZSH/oh-my-zsh.sh
 
+
 GEM_PATH='/var/lib/gems/1.8/'
 
 export PYTHONPATH=$GAE_SDK:$GAE_SDK/lib/fancy_urllib:$GAE_SDK/lib/yaml/lib:$GAE_SDK/lib/webob:$GAE_SDK/lib/antlr3:$GAE_SDK/lib/simplejson
+
+alias ncdev="/vagrant/ncdev.sh"
+
