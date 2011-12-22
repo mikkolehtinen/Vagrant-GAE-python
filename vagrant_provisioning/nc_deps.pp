@@ -8,6 +8,12 @@ class ncdeps {
       }
       package { "compass":
       	provider => gem,
-      }      
+      }    
+      
+
+    package {
+        "gettext": ensure => present;
+    }
+
 }
 
