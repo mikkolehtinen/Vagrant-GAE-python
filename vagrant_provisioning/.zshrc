@@ -19,7 +19,7 @@ plugins=(git gae vim)
 
 source $ZSH/oh-my-zsh.sh
 
-$GAE_SDK=/opt/google_appengine
+export GAE_SDK=/opt/google_appengine
 
 GEM_PATH='/var/lib/gems/1.8/'
 
